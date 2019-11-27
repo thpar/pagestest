@@ -24,8 +24,20 @@ And some more | here
   </svg>
 </div>
 
-<script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>    
   var hello = function(){
     console.log("Hello world");
   }();
+
+  var blink = function(){
+    var circle = d3.select("#figure")
+	.select("svg")
+	.selectAll("circle");
+
+    circle.on('click', function(){
+      d3.select(this).style('color', 'red');
+    });
+  }();
+  
 </script>
