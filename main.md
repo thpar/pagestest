@@ -18,3 +18,9 @@ And some more | here
 
 [mylink]: https://duckduckgo.com/
 
+
+<script>
+  var hello = function(){
+    console.log("Hello world");
+  }();
+</script>
