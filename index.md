@@ -34,10 +34,20 @@ And some more | here
     var circle = d3.select("#figure")
 	.select("svg")
 	.selectAll("circle");
-
+    
     circle.on('click', function(){
       console.log("Clicked circle");
-      d3.select(this).style('color', 'red');
+      var thisCircle = d3.select(this);
+      console.dir(thisCircle);
+      
+      var color = thisCircle.style('color');
+      console.dir(color);
+      
+      if (color == 'green'){
+	thisCircle.style('color', 'red');
+      } else {
+	thisCircle.style('color', 'green');
+      }
     });
   }();
   
