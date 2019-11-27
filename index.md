@@ -25,30 +25,4 @@ And some more | here
 </div>
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
-<script>    
-  var hello = function(){
-    console.log("Hello world");
-  }();
-
-  var blink = function(){
-    var circle = d3.select("#figure")
-	.select("svg")
-	.selectAll("circle");
-    
-    circle.on('click', function(){
-      console.log("Clicked circle");
-      var thisCircle = d3.select(this);
-      console.dir(thisCircle);
-      
-      var color = thisCircle.attr('fill');
-      console.dir(color);
-      
-      if (color == 'green'){
-	thisCircle.attr('fill', 'red');
-      } else {
-	thisCircle.attr('fill', 'green');
-      }
-    });
-  }();
-  
-</script>
+<script src="blink.js"></script>
