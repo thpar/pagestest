@@ -36,6 +36,7 @@ And some more | here
 	.selectAll("circle");
 
     circle.on('click', function(){
+      console.log("Clicked circle");
       d3.select(this).style('color', 'red');
     });
   }();
