@@ -20,7 +20,7 @@ And some more | here
 
 <div id="figure" width="100" height="100">
   <svg>
-	<circle class="shadow" cx="50" cy="50" r="30" stroke-width="1" stroke="black" fill="green"></circle>
+	<circle cx="50" cy="50" r="30" stroke-width="1" stroke="black" fill="green"></circle>
   </svg>
 </div>
 
@@ -40,13 +40,13 @@ And some more | here
       var thisCircle = d3.select(this);
       console.dir(thisCircle);
       
-      var color = thisCircle.style('color');
+      var color = thisCircle.attr('fill');
       console.dir(color);
       
       if (color == 'green'){
-	thisCircle.style('color', 'red');
+	thisCircle.attr('fill', 'red');
       } else {
-	thisCircle.style('color', 'green');
+	thisCircle.attr('fill', 'green');
       }
     });
   }();
