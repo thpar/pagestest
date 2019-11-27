@@ -20,7 +20,7 @@ And some more | here
 
 <div id="figure" width="100" height="100">
   <svg>
-	<circle class="shadow" cx="230" cy="100" r="68" stroke-width="1" stroke="black" fill="green"></circle>
+	<circle class="shadow" cx="50" cy="50" r="30" stroke-width="1" stroke="black" fill="green"></circle>
   </svg>
 </div>
 
